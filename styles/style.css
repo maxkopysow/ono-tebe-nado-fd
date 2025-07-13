@@ -19,8 +19,6 @@
             gap: 32px;
             marging-left: 50px;
 
-            .header__menu-item {
-            }
             .header__menu-item__active {
                 list-style: none;
                 a {
