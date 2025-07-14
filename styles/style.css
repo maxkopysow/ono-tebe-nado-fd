@@ -56,6 +56,7 @@ address {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
 }
 .cover {
     min-height: 757px;
@@ -85,8 +86,10 @@ address {
         padding: 0 50px;
         padding-top: 165px;
         opacity: 1;
+        z-index: 2;
     }
     .cover__description {
+        z-index: 2;
         color: #fff;
 
         width: 100%;
@@ -182,6 +185,8 @@ a {
         color: #fff;
         gap: 25px;
         flex: 1 0 auto;
+        flex-wrap: wrap;
+
         display: flex;
 
         li {
@@ -322,7 +327,7 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 140px;
-    padding: 0 50px;
+    padding: 0 50px 80px 50px;
 
     font-family: Raleway, Arial, sans-serif;
     font-weight: 400;
